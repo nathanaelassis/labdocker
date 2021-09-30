@@ -11,7 +11,7 @@ services:
       - "80:80"
     environment: 
       - MESSAGE="Usando variavel de ambiente para mudar a mensagem do site!"
-
+      - REDIS_HOST="redis"   
   redis:
     image: redis
     ports:
